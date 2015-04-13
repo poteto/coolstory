@@ -22,5 +22,6 @@ test('visiting /', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/');
+    assert.ok(find('.alert.alert-success'));
   });
 });
